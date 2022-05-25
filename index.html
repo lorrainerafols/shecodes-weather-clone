@@ -22,18 +22,38 @@
         /></a>
         <form>
           <div class="row">
-            <div class="col-9">
+            <div class="col-9 p-0">
               <input
                 type="search"
                 placeholder="Enter a city..."
                 class="search-input"
               />
             </div>
-            <div class="col-3">
-              <button type="button" class="btn btn-success">Success</button>
+            <div class="col-3 p-0">
+              <button type="button" class="btn btn-success search-btn">
+                Search
+              </button>
             </div>
           </div>
         </form>
+        <div class="row">
+          <div class="col-6">
+            <h1>New York</h1>
+            <div>
+              <ul>
+                <li>Wednesday 16:07, clear sky</li>
+                <li>
+                  Humidity: <strong>72%</strong>, Wind: <strong>3.6km/h</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <canvas></canvas>
+            <span>13</span>
+            <span>°C</span>
+          </div>
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script>
