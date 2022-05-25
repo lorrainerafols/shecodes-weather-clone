@@ -1,3 +1,8 @@
+body {
+  background: #f9f7fe;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+}
+
 .heading {
   color: green;
 }
@@ -5,4 +10,15 @@
 .logo {
   max-width: 150px;
   display: block;
+}
+
+.content-wrapper {
+  background: white;
+  max-width: 700px;
+  display: block;
+  margin: 100px auto;
+  padding: 40px;
+  border-style: none;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
 }
