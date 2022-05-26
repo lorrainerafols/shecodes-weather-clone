@@ -1,6 +1,5 @@
 body {
   background: #f9f7fe;
-  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
 }
 
 form {
@@ -17,6 +16,7 @@ form {
 }
 
 .content-wrapper {
+  font-family: "Inter", sans-serif;
   background: white;
   max-width: 650px;
   display: block;

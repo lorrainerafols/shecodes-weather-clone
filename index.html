@@ -12,79 +12,101 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>SheCodes Weather App Clone</title>
   </head>
   <body>
     <div class="container">
-      <div class="content-wrapper">
-        <a href="https://shecodes.io" target="_blank"
-          ><img class="logo" src="images/logo.png" alt="shecodes-logo"
-        /></a>
-        <form>
+      <div class="main-wrapper">
+        <div class="content-wrapper">
+          <a href="https://shecodes.io" target="_blank"
+            ><img class="logo" src="images/logo.png" alt="shecodes-logo"
+          /></a>
+          <form>
+            <div class="row">
+              <div class="col-9 p-0">
+                <input
+                  type="search"
+                  placeholder="Enter a city..."
+                  class="search-input"
+                />
+              </div>
+              <div class="col-3 p-0">
+                <button type="button" class="btn btn-success search-btn">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
           <div class="row">
-            <div class="col-9 p-0">
-              <input
-                type="search"
-                placeholder="Enter a city..."
-                class="search-input"
-              />
+            <div class="col-6">
+              <h1>New York</h1>
+              <div>
+                <ul>
+                  <li>Wednesday 16:07, clear sky</li>
+                  <li>
+                    Humidity: <strong>72%</strong>, Wind:
+                    <strong>3.6km/h</strong>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-3 p-0">
-              <button type="button" class="btn btn-success search-btn">
-                Search
-              </button>
-            </div>
-          </div>
-        </form>
-        <div class="row">
-          <div class="col-6">
-            <h1>New York</h1>
-            <div>
-              <ul>
-                <li>Wednesday 16:07, clear sky</li>
-                <li>
-                  Humidity: <strong>72%</strong>, Wind: <strong>3.6km/h</strong>
-                </li>
-              </ul>
+            <div class="col-6">
+              <div class="temperature-container">
+                <canvas width="52" height="52"></canvas>
+                <span>13</span><span>°C</span>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="temperature-container">
-              <canvas width="52" height="52"></canvas>
-              <span>13</span><span>°C</span>
+          <div class="row">
+            <div class="col">
+              <span class="forecast-day1">Wed</span>
+              <canvas width="38" height="38"></canvas>
+              <span class="temperature-c">33°C</span>
+              <span class="temperature-f">91°F</span>
+            </div>
+            <div class="col">
+              <span class="forecast-day2">Thu</span>
+              <canvas width="38" height="38"></canvas>
+              <span class="temperature-c">33°C</span>
+              <span class="temperature-f">91°F</span>
+            </div>
+            <div class="col">
+              <span class="forecast-day3">Fri</span>
+              <canvas width="38" height="38"></canvas>
+              <span class="temperature-c">33°C</span>
+              <span class="temperature-f">91°F</span>
+            </div>
+            <div class="col">
+              <span class="forecast-day4">Sat</span>
+              <canvas width="38" height="38"></canvas>
+              <span class="temperature-c">33°C</span>
+              <span class="temperature-f">91°F</span>
+            </div>
+            <div class="col">
+              <span class="forecast-day5">Sun</span>
+              <canvas width="38" height="38"></canvas>
+              <span class="temperature-c">33°C</span>
+              <span class="temperature-f">91°F</span>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <span class="forecast-day1">Wed</span>
-            <canvas width="38" height="38"></canvas>
-            <span class="temperature-c">33°C</span>
-            <span class="temperature-f">91°F</span>
-          </div>
-          <div class="col">
-            <span class="forecast-day2">Thu</span>
-            <canvas width="38" height="38"></canvas>
-            <span class="temperature-c">33°C</span>
-            <span class="temperature-f">91°F</span>
-          </div>
-          <div class="col">
-            <span class="forecast-day3">Fri</span>
-            <canvas width="38" height="38"></canvas>
-            <span class="temperature-c">33°C</span>
-            <span class="temperature-f">91°F</span>
-          </div>
-          <div class="col">
-            <span class="forecast-day4">Sat</span>
-            <canvas width="38" height="38"></canvas>
-            <span class="temperature-c">33°C</span>
-            <span class="temperature-f">91°F</span>
-          </div>
-          <div class="col">
-            <span class="forecast-day5">Sun</span>
-            <canvas width="38" height="38"></canvas>
-            <span class="temperature-c">33°C</span>
-            <span class="temperature-f">91°F</span>
+          <div class="row">
+            <div class="col">
+              <small
+                >This project was coded by
+                <a href="https://twitter.com/raineclaire_" target="_blank"
+                  >Raine</a
+                >
+                and is
+                <a href="#" target="_blank">open-sourced on Github</a> and
+                <a href="#" target="_blank">hosted on Netlify</a></small
+              >
+            </div>
           </div>
         </div>
       </div>
