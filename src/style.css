@@ -109,17 +109,22 @@ strong {
 }
 
 .forecast {
-  margin-bottom: 80px;
   text-align: center;
-  padding: 10px 80px;
+  vertical-align: top;
+  margin: 20px 10px 70px;
 }
 
 .cloudy-forecast {
-  width: 50px;
+  width: 90px;
+  padding: 20px;
 }
 
 .temperature-c,
 .temperature-f {
   font-weight: 500;
   color: #fe77a3;
+}
+
+.footer {
+  text-align: center;
 }
