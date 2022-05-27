@@ -5,13 +5,13 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,91 +22,89 @@
   </head>
   <body>
     <div class="container">
-      <div class="main-wrapper">
-        <div class="content-wrapper">
-          <a href="https://shecodes.io" target="_blank"
-            ><img class="logo" src="images/logo.png" alt="shecodes-logo"
-          /></a>
-          <form>
-            <div class="row">
-              <div class="col-9 p-0">
-                <input
-                  type="search"
-                  placeholder="Enter a city..."
-                  class="search-input"
-                />
-              </div>
-              <div class="col-3 p-0">
-                <button type="button" class="btn btn-success search-btn">
-                  Search
-                </button>
-              </div>
-            </div>
-          </form>
+      <div class="content-wrapper">
+        <a href="https://shecodes.io" target="_blank"
+          ><img class="logo" src="images/logo.png" alt="shecodes-logo"
+        /></a>
+        <form>
           <div class="row">
-            <div class="col-6">
-              <h1>New York</h1>
-              <div>
-                <ul>
-                  <li>Wednesday 16:07, clear sky</li>
-                  <li>
-                    Humidity: <strong>72%</strong>, Wind:
-                    <strong>3.6km/h</strong>
-                  </li>
-                </ul>
-              </div>
+            <div class="col-9 p-0">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                class="search-input"
+              />
             </div>
-            <div class="col-6">
-              <div class="temperature-container">
-                <canvas width="52" height="52"></canvas>
-                <span>13</span><span>°C</span>
-              </div>
+            <div class="col-3 p-0">
+              <button type="button" class="btn btn-success search-btn">
+                Search
+              </button>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <span class="forecast-day1">Wed</span>
-              <canvas width="38" height="38"></canvas>
-              <span class="temperature-c">33°C</span>
-              <span class="temperature-f">91°F</span>
-            </div>
-            <div class="col">
-              <span class="forecast-day2">Thu</span>
-              <canvas width="38" height="38"></canvas>
-              <span class="temperature-c">33°C</span>
-              <span class="temperature-f">91°F</span>
-            </div>
-            <div class="col">
-              <span class="forecast-day3">Fri</span>
-              <canvas width="38" height="38"></canvas>
-              <span class="temperature-c">33°C</span>
-              <span class="temperature-f">91°F</span>
-            </div>
-            <div class="col">
-              <span class="forecast-day4">Sat</span>
-              <canvas width="38" height="38"></canvas>
-              <span class="temperature-c">33°C</span>
-              <span class="temperature-f">91°F</span>
-            </div>
-            <div class="col">
-              <span class="forecast-day5">Sun</span>
-              <canvas width="38" height="38"></canvas>
-              <span class="temperature-c">33°C</span>
-              <span class="temperature-f">91°F</span>
+        </form>
+        <div class="row">
+          <div class="col-6">
+            <h1>New York</h1>
+            <div>
+              <ul>
+                <li>Wednesday 16:07, clear sky</li>
+                <li>
+                  Humidity: <strong>72%</strong>, Wind:
+                  <strong>3.6km/h</strong>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <small
-                >This project was coded by
-                <a href="https://twitter.com/raineclaire_" target="_blank"
-                  >Raine</a
-                >
-                and is
-                <a href="#" target="_blank">open-sourced on Github</a> and
-                <a href="#" target="_blank">hosted on Netlify</a></small
+          <div class="col-6">
+            <div class="temperature-container">
+              <canvas width="52" height="52"></canvas>
+              <span>13</span><span>°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="forecast-day1">Wed</span>
+            <canvas width="38" height="38"></canvas>
+            <span class="temperature-c">33°C</span>
+            <span class="temperature-f">91°F</span>
+          </div>
+          <div class="col">
+            <span class="forecast-day2">Thu</span>
+            <canvas width="38" height="38"></canvas>
+            <span class="temperature-c">33°C</span>
+            <span class="temperature-f">91°F</span>
+          </div>
+          <div class="col">
+            <span class="forecast-day3">Fri</span>
+            <canvas width="38" height="38"></canvas>
+            <span class="temperature-c">33°C</span>
+            <span class="temperature-f">91°F</span>
+          </div>
+          <div class="col">
+            <span class="forecast-day4">Sat</span>
+            <canvas width="38" height="38"></canvas>
+            <span class="temperature-c">33°C</span>
+            <span class="temperature-f">91°F</span>
+          </div>
+          <div class="col">
+            <span class="forecast-day5">Sun</span>
+            <canvas width="38" height="38"></canvas>
+            <span class="temperature-c">33°C</span>
+            <span class="temperature-f">91°F</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <small
+              >This project was coded by
+              <a href="https://twitter.com/raineclaire_" target="_blank"
+                >Raine</a
               >
-            </div>
+              and is
+              <a href="#" target="_blank">open-sourced on Github</a> and
+              <a href="#" target="_blank">hosted on Netlify</a></small
+            >
           </div>
         </div>
       </div>
