@@ -22,6 +22,10 @@ ul {
   padding: 0;
 }
 
+ul::first-letter {
+  text-transform: capitalize;
+}
+
 strong {
   font-weight: 500;
   color: #fe77a3;
@@ -84,12 +88,12 @@ strong {
   background-color: #6647b5;
 }
 
-.description {
-  text-transform: capitalize;
-}
-
 .temperature-container {
   text-align: right;
+}
+
+.description {
+  text-transform: capitalize;
 }
 
 .cloudy {
