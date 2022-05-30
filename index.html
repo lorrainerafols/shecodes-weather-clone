@@ -47,13 +47,16 @@
         </form>
         <div class="row">
           <div class="col-6">
-            <h1>New York</h1>
+            <h1 id="city"></h1>
             <div>
               <ul>
-                <li>Wednesday 16:07, clear sky</li>
                 <li>
-                  Humidity: <strong>72%</strong>, Wind:
-                  <strong>3.6km/h</strong>
+                  Wednesday 16:07,
+                  <span id="description" class="description">clear sky</span>
+                </li>
+                <li>
+                  Humidity: <strong><span id="humidity"></span>%</strong>, Wind:
+                  <strong><span id="wind"></span> km/h</strong>
                 </li>
               </ul>
             </div>
@@ -61,7 +64,7 @@
           <div class="col-6">
             <div class="temperature-container">
               <img class="cloudy" src="images/cloudy.png" alt="cloudy" />
-              <span class="current-temperature">13</span
+              <span id="current-temperature" class="current-temperature"></span
               ><span class="current-degrees">°C</span>
             </div>
           </div>
