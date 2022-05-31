@@ -90,10 +90,7 @@ a:hover {
   background-color: #6647b5;
 }
 
-.search-btn:focus {
-  background-color: #6647b5;
-}
-
+.search-btn:focus,
 .search-btn:active {
   background-color: #6647b5;
 }

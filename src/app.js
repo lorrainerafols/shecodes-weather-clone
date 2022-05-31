@@ -22,9 +22,9 @@ function formatDate(timestamp) {
 }
 
 function showTemperature(response) {
-  document.querySelector("#current-temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  let celsiusTemp = response.data.main.temp;
+  document.querySelector("#current-temperature").innerHTML =
+    Math.round(celsiusTemp);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
@@ -68,10 +68,11 @@ function displayCelsius(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let celsiusTemp = response.data.main.temp;
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
+
+let celsiusTemp = null;
 
 document.querySelector("#search-form").addEventListener("submit", handleSubmit);
 
