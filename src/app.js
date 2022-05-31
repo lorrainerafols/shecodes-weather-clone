@@ -57,11 +57,11 @@ function handleSubmit(event) {
 
 function displayFahrenheit(event) {
   event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  document.querySelector("#current-temperature").innerHTML =
-    Math.round(fahrenheitTemp);
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
 function displayCelsius(event) {
@@ -69,11 +69,9 @@ function displayCelsius(event) {
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let celsiusTemp = response.data.main.temp;
-  document.querySelector("#current-temperature").innerHTML =
-    Math.round(celsiusTemp);
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
-
-let celsiusTemp = null;
 
 document.querySelector("#search-form").addEventListener("submit", handleSubmit);
 
