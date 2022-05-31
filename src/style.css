@@ -96,9 +96,9 @@ strong {
   text-transform: capitalize;
 }
 
-.cloudy {
-  width: 70px;
-  padding-right: 15px;
+.weather-icon {
+  width: 100px;
+  padding-right: 10px;
 }
 
 .current-temperature {

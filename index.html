@@ -26,13 +26,15 @@
         <a href="https://shecodes.io" target="_blank"
           ><img class="logo" src="images/logo.png" alt="shecodes-logo"
         /></a>
-        <form>
+        <form id="search-form">
           <div class="row">
             <div class="col-9 p-0">
               <input
                 type="search"
                 placeholder="Enter a city..."
                 class="search-input"
+                id="city-input"
+                autocomplete="off"
               />
             </div>
             <div class="col-3 p-0">
@@ -63,7 +65,7 @@
           </div>
           <div class="col-6">
             <div class="temperature-container">
-              <img id="icon" class="cloudy" src="#" alt="cloudy" />
+              <img id="icon" class="weather-icon" src="#" alt="cloudy" />
               <span id="current-temperature" class="current-temperature"></span
               ><span class="current-degrees">°C</span>
             </div>
