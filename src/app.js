@@ -22,7 +22,7 @@ function formatDate(timestamp) {
 }
 
 function showTemperature(response) {
-  let celsiusTemp = response.data.main.temp;
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#current-temperature").innerHTML =
     Math.round(celsiusTemp);
   document.querySelector("#city").innerHTML = response.data.name;
