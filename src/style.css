@@ -138,14 +138,20 @@ a:hover {
 }
 
 .cloudy-forecast {
-  width: 90px;
-  padding: 20px;
+  width: 100px;
+  padding: 10px;
 }
 
-.temperature-c,
-.temperature-f {
+.temperature-c {
   font-weight: 500;
   color: #fe77a3;
+  padding-right: 2px;
+}
+
+.temperature-f {
+  font-weight: 500;
+  color: #fe77a4a2;
+  padding-left: 2px;
 }
 
 .footer {
